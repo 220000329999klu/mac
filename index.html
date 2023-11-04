@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Welcome to My Awesome Website</h2>
+  <p>This is the homepage of our awesome website. You can perform the following actions:</p>
+  <ul>
+    <li><a class="action-link" href="{% url 'login' %}">Login</a></li>
+    <li><a class="action-link" href="{% url 'signup' %}">Sign Up</a></li>
+    <li><a class="action-link" href="{% url 'logout' %}">Logout</a></li>
+  </ul>
+
+{% endblock %}
